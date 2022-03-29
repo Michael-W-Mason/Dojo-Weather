@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dojo Weather</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar flex-row">
+            <h1>Dojo Weather</h1>
+            <div class="cities flex-row">
+                <h1 onclick="alertName()"><a href="#">Burbank</a></h1>
+                <h1 onclick="alertName()"><a href="#">Chicago</a></h1>
+                <h1 onclick="alertName()"><a href="#">Dallas</a></h1>
+            </div>
+        </div>
+    </header>
+    <div class="page flex-col">
+        <div class="body flex-col">
+            <div class="body-top flex-row">
+                <h1 id="currentcity">San Jose</h1>
+                <div class="tempsetting flex-row">
+                    <h1>show temperature in </h1>
+                    <select name="temps" id="temps" onchange="changeUnit(this)">
+                        <option value="F" selected>°F</option>
+                        <option value="C">°C</option>
+                    </select>
+                </div>
+            </div>
+            <div class="body-bottom flex-row">
+                <div class="pane flex-col">
+                    <h1>Today</h1>
+                    <img src="./assets/some_rain.png" alt="some rain">
+                    <h2>some rain</h2>
+                    <div class="body-temps flex-row">
+                        <h1 class="body-hi">75°</h1>
+                        <h1 class="body-low">65°</h1>
+                    </div>
+                </div>
+                <div class="pane flex-col">
+                    <h1>Tomorrow</h1>
+                    <img src="./assets/some_sun.png" alt="some sun">
+                    <h2>some sun</h2>
+                    <div class="body-temps flex-row">
+                        <h1 class="body-hi">80°</h1>
+                        <h1 class="body-low">66°</h1>
+                    </div>
+                </div>
+                <div class="pane flex-col">
+                    <h1>Friday</h1>
+                    <img src="./assets/some_clouds.png" alt="some clouds">
+                    <h2>some clouds</h2>
+                    <div class="body-temps flex-row">
+                        <h1 class="body-hi">69°</h1>
+                        <h1 class="body-low">61°</h1>
+                    </div>
+                </div>
+                <div class="pane flex-col">
+                    <h1>Saturday</h1>
+                    <img src="./assets/some_sun.png" alt="some sun">
+                    <h2>some sun</h2>
+                    <div class="body-temps flex-row">
+                        <h1 class="body-hi">78°</h1>
+                        <h1 class="body-low">70°</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="flex-row">
+            <img src="./assets/cookie.png" alt="cookie">
+            <div class="cookie-text flex-col">
+                <h1>Stop! Cookie Time</h1>
+                <h2>We use cookies (sadly not the edible one) to personalize content and ads, to provide social media
+                    features an to analyse our traffic. <a href="#">Read More...</a></h2>
+            </div>
+            <button onclick="removeCookie(this)">I Accept</button>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

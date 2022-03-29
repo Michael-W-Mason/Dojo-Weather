@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.page{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+header{
+    position: sticky;
+    top: 0px;   
+}
+
+.navbar{
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: lightskyblue;
+    color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar > h1{
+    padding: 10px 0px;
+    font-size: 35px;
+
+}
+
+.cities{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cities > h1 > a{
+    padding: 10px 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.body-top{
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+}
+
+#currentcity{
+    font-size: 40px;
+}
+
+.tempsetting{
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.tempsetting > h1{
+    font-size: 20px;
+}
+
+.tempsetting > select{
+    padding: 6px;
+}
+
+.body-bottom{
+    margin: 15px 0px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pane{
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pane > h1{
+    padding: 10px;
+}
+
+.pane > img{
+    border-radius: 50%;
+}
+
+.pane > h2{
+    padding: 10px;
+}
+
+.body-temps{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.body-temps > h1{
+    padding: 10px 35px;
+}
+
+.body-hi{
+    color: red;
+}
+
+.body-low{
+    color: blue;
+}
+
+footer{
+    width: 60%;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > img{
+    padding: 20px;
+}
+
+.cookie-text{
+    padding: 20px;
+}
+
+.cookie-text > h1{
+    font-size: 25px;
+}
+
+.cookie-text > h2{
+    font-size: 20px;
+}
+
+.cookie-text > h2 > a{
+    color: blue;
+}
+
+footer > button{
+    margin: 10px;
+    padding: 10px 30px;
+    white-space: nowrap;
+    text-align: center;
+    background-color: lightskyblue;
+    box-shadow: 3px 3px 0px black;
+}
